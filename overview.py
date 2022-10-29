@@ -1,3 +1,4 @@
+import config
 
 def section(title, pre="\n"):
     print("{}==== {} ====\n".format(pre, title))
@@ -21,6 +22,8 @@ def check_feature(title, import_name):
     except:
         print("Problem importing", title)
 
+check_feature("machine", "check.machine")
+
 check_feature("machine.Pin", "check.pin")
 
 check_feature("machine.PWM", "check.pwm")
@@ -28,6 +31,10 @@ check_feature("machine.PWM", "check.pwm")
 check_feature("machine.SoftI2C", "check.i2c_soft")
 
 check_feature("machine.I2C", "check.i2c_hard")
+
+check_feature("machine.SoftSPI", "check.spi_soft")
+
+check_feature("machine.SPI", "check.spi_hard")
 
 check_feature("machine.rtc", "check.rtc")
 

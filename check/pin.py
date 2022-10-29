@@ -9,6 +9,7 @@ from config import output_pin, input_pin
 #   - Various pull up/down
 
 #p0 = Pin(config.output_pin, Pin.OUT)    # create output pin on GPIO0
+print(output_pin)
 p0 = Pin(output_pin, Pin.OUT)    # create output pin on GPIO0
 p0.on()                 # set pin to "on" (high) level
 p0.off()                # set pin to "off" (low) level
